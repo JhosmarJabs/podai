@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.content {
+    width: 80%;
+    max-width: 1200px;
+    border: 2px solid #9c9b9b;
+    box-shadow: 5px 5px 10px rgba(68, 68, 68, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+header .banner {
+    width: 100%;
+    height: auto;
+}
+
+.barra {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: right;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap; /* Ajusta automáticamente los enlaces en pantallas pequeñas */
+    background-color: #000;
+    padding: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    white-space: nowrap; /* Evita que el texto se divida */
+}
+
+.navbar a:hover {
+    background-color: #444;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 20px;
+}
+
+.aceso {
+    width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box; /* Incluye padding dentro del ancho */
+}
+
+.extra {
+    width: 66.66%;
+    padding: 20px;
+    border-left: 2px solid rgb(156, 155, 155);
+    box-sizing: border-box;
+}
+
+.divtd {
+    background-color: #008000;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #006400;
+}
+
+a {
+    font-size: 12px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contador {
+    font-size: 25px;
+    font-weight: bold;
+    color: #313131;
+}
+
+.contador-inicio {
+    font-size: 12px;
+    color: #313131;
+}
+
+.notice {
+    font-size: 14px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.instruction {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+.table-title {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+th {
+    background-color: #444;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: auto;
+    text-align: left;
+}
+
+footer p,
+footer address {
+    margin: 0;
+}
+
+/* Responsividad para pantallas medianas (tabletas y dispositivos pequeños) */
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+        border: none;
+        box-shadow: none;
+    }
+
+    .inicio {
+        flex-direction: column;
+    }
+
+    .aceso,
+    .extra {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .extra {
+        border-left: none;
+        border-top: 2px solid #9c9b9b;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar a {
+        padding: 5px 10px;
+    }
+}
+
+/* Responsividad para pantallas pequeñas (teléfonos) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .aceso {
+        padding: 5px;
+    }
+
+    .extra {
+        padding: 5px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .contador {
+        font-size: 20px;
+    }
+
+    .instruction {
+        font-size: 14px;
+    }
+}

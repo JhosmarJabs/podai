@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #e6ecf0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header img {
+    height: 100px;
+    vertical-align: middle;
+}
+
+header h1 {
+    margin: 5px 0 0;
+    font-size: 20px;
+}
+
+header h2 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.menu {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.welcome {
+    background-color: #d8efd8;
+    padding: 100px;
+    border-radius: 5px;
+    border: 1px solid #a0cfa0;
+    margin-bottom: 20px;
+}
+
+.welcome h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.welcome p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header h1, header h2 {
+        font-size: 16px;
+    }
+
+    .menu a {
+        margin: 0 10px;
+        font-size: 12px;
+    }
+
+    .welcome h3 {
+        font-size: 16px;
+    }
+
+    .welcome p {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}

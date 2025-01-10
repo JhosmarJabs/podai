@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal PODAI</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="principal">
+    <div class="content">
+        <header>
+            <img src="assets/banner.jpg" alt="Banner" class="banner">
+            <div class="barra">
+                <span id="fecha" class="fecha"></span>
+            </div>
+        </header>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Top Alumnos</a>
+            <a href="#">Foro</a>
+            <a href="#">Acerca de...</a>
+            <a href="#">Ayuda</a>
+        </nav>
+        <main>
+            <div class="inicio">
+                <div class="aceso">
+                    <div class="divtd">Acceso al sistema</div><br>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><strong>Período:</strong></td>
+                                <td>
+                                    <select id="cmbPeriodos">
+                                        <option value="20251" selected>20251</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sesión:</strong></td>
+                                <td>
+                                    <select id="cmbSesion">
+                                        <option value="">[Elija un tipo]</option>
+                                        <option value="Alumno" selected>Alumno</option>
+                                        <option value="Tutor">Tutor</option>
+                                        <option value="Docente">Docente</option>
+                                        <option value="Docente IE">Docente IE</option>
+                                        <option value="Director">Director</option>
+                                        <option value="Administrador">Administrador</option>
+                                        <option value="Coordinación de ingles">Coordinación de ingles</option>
+                                        <option value="Vinculación">Vinculación</option>
+                                        <option value="Rector">Rector</option>
+                                        <option value="Servicios Escolares">Servicios Escolares</option>
+                                        <option value="Dirección académica">Dirección académica</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usuario:</strong></td>
+                                <td>
+                                    <input type="text" id="txtUsuario" placeholder="Matrícula" maxlength="15">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Contraseña:</strong></td>
+                                <td>
+                                    <input type="password" id="txtContra" maxlength="15">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: center;">
+                                    <button type="submit">Entrar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: center;">
+                                    <a href="BuscarUsuario.aspx">¿Olvidaste tu contraseña?</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <div class="divtd">Eres el visitante número:</div>
+                    <center>
+                        <span id="lblContador" class="contador">5435625</span>
+                        <br><br>
+                        <span class="contador-inicio">Contador inicializado el 08/09/2011</span>
+                    </center>
+                    <br>
+                    <div class="divtd">Usuarios conectados:</div>
+                    <center>
+                        <span id="lblContador2" class="contador">161</span>
+                    </center>
+                </div>
+                <div class="extra">
+                    <img src="assets/podai.jpg" alt="Banner" class="banner">
+                    <div class="notice">
+                        <p>Aviso: A los <strong>docentes de Inglés</strong></p>
+                    </div>
+                    <div class="instruction">
+                        <p><strong>Seleccione un Período para visualizar la información:</strong></p>
+                        <select>
+                            <option value="20232" selected>20232</option>
+                        </select>
+                    </div>
+                    <div class="table-container">
+                        <div class="table-title">MEJORES PROMEDIOS DEL PERIODO 20243</div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Promedio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>LICENCIATURA EN INNOVACIÓN DE NEGOCIOS Y MERCADOTECNIA</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>MENDOZA HERNANDEZ ITZEL GUADALUPE (10° A)</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>© 2013 - UTHH &nbsp;&nbsp;&nbsp; PODAI</p>
+            <address>
+                Carretera Huejutla - Chalahuiyapa S/N, C.P. 43000, Huejutla de Reyes, Hidalgo.<br>
+                Teléfonos: 789 8962088 al 91<br>
+                E-mail: <strong>rectoría@uthh.edu.mx</strong>
+            </address>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
